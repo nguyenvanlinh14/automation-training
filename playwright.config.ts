@@ -19,21 +19,21 @@ export default defineConfig({
   },
   projects: [
     {
-      name: "chromium",
+      name: "mobile chrome",
       use: {
-        ...devices["Desktop Chrome"],
+        ...devices["Pixel 5"],
         launchOptions: {
-          slowMo: 0,
+          slowMo: 1200,
         },
       },
     },
-    {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
-    },
-    {
-      name: "webkit",
-      use: { ...devices["Desktop Safari"] },
-    },
+    // {
+    //   name: "chrome",
+    //   use: { ...devices["Desktop Chrome"] },
+    // },
+    // {
+    //   name: "webkit",
+    //   use: { ...devices["iPhone 17 Pro"] },
+    // },
   ],
 });
